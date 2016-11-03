@@ -49,7 +49,7 @@ export DATE := $(date)
 all: run
 
 .PHONY: run
-run:
+run: .depend.secondary
 	./analyze.py raw/shuo_test335.py
 
 .PHONY: depend
